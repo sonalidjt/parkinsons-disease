@@ -4,9 +4,9 @@ from flask_cors import cross_origin
 import pickle
 
 # loading the model file from the storage
-loaded_model = pickle.load(open('modelForPrediction.sav', 'rb'))
+loaded_model = pickle.load(open('models/modelForPrediction.sav', 'rb'))
 # loading the Scalar file from the storage
-scaler = pickle.load(open('standardScalar.sav', 'rb'))
+scaler = pickle.load(open('models/standardScalar.sav', 'rb'))
 
 # initializing a flask app
 app = Flask(__name__)
